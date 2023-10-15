@@ -49,4 +49,3 @@ const  onNavToggleBtnClicked = (event) => {
 }
 
 navToggleBtn.addEventListener('click', onNavToggleBtnClicked)
-
