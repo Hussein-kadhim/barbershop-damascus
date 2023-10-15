@@ -1,6 +1,159 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+:root {
+  /* header */
+  --header-content-padding-inline-start: 20px;
+  --header-content-padding-inline-end: 20px;
+  --header-content-padding-block-start: 20px;
+  --header-content-padding-block-end: 20px;
+/* header mobile */
+  --header-content-mobile-padding-block-end: 10px;
+  --header-content-mobile-padding-block-start: 10px;
+  --header-content-mobile-padding-inline-start: 10px;
+  --header-content-mobile-padding-inline-end: 10px;
+
+  /* Nav item */
+  --nav-item-padding-inline-start: 0;
+  --nav-item-padding-inline-end: 20px;
+  --nav-item-padding-block-start: 0;
+  --nav-item-padding-block-end: 0;
+/* Nav Item Mobile */
+  --nav-item-mobile-padding-inline-start: 0;
+  --nav-item-mobile-padding-inline-end: 0;
+  --nav-item-mobile-padding-block-end: 10px;
+  --nav-item-mobile-padding-block-start: 10px;
+
+  /* Nav list */
+  --nav-list-flex-direction: column;
+  --nav-list-display: none;
+  --nav-list-block-size: 50vh;
+  --nav-toggle-btn-display: block;
+/*  Nav list mobile */
+  --nav-list-mobile-padding-inline-end: 10px;
+  --nav-list-align-items:center;
 }
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+  width: 100%;
+  }
+
+.header {
+  background-color: black;
+  position: relative;
+}
+
+.header__content {
+  padding-inline-start: var(--header-content-mobile-padding-inline-start);
+  padding-inline-end: var(--header-content-mobile-padding-inline-end);
+  padding-block-start: var(--header-content-mobile-padding-block-start);
+  padding-block-end: var(--header-content-mobile-padding-block-end);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo__image {
+  height: 40px;
+  cursor: pointer;
+}
+
+.nav__toggle-btn{
+    display: var(--nav-toggle-btn-display);
+        background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 44px;
+}
+
+.nav__list {
+  display: var(--nav-list-display);
+  flex-direction: var(--nav-list-flex-direction);
+  list-style-type: none;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  width: 100%;
+  background-color: black;
+  block-size: var(--nav-list-block-size);
+  padding-block-start: var(--nav-list-mobile-padding-block-start);
+  padding-inline-end: var(--nav-list-mobile-padding-inline-end);
+  align-items: end;
+}
+
+.nav__list--mobile {
+    --nav-list-display:flex;
+}
+
+.nav__item {
+  padding-inline-start: var(--nav-item-mobile-padding-inline-start);
+  padding-inline-end: var(--nav-item-mobile-padding-inline-end);
+  padding-block-start: var(--nav-item-mobile-padding-block-start);
+  padding-block-end: var(--nav-item-mobile-padding-block-end);
+}
+
+.nav__item:last-child {
+  padding-inline-end: 0;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav__link:hover {
+  color: #999;
+}
+
+/* Hero section */
+
+
+
+@media (min-width: 768px) {
+  .header__content {
+    --header-content-mobile-padding-inline-start: var(
+      --header-content-padding-inline-start
+    );
+    --header-content-mobile-padding-inline-end: var(
+      --header-content-padding-inline-end
+    );
+    --header-content-mobile-padding-block-start: var(
+      --header-content-padding-block-start
+    );
+    --header-content-mobile-padding-block-end: var(
+      --header-content-padding-block-end
+    );
+  }
+  .nav__toggle-btn{
+    --nav-toggle-btn-display: none;
+  }
+  .nav__list {
+    --nav-list-mobile-padding-inline-end: 0;
+    --nav-list-mobile-padding-block-start: 0;
+      --nav-list-flex-direction: row;
+      --nav-list-block-size: 100%;
+      --nav-list-display:flex;
+      --nav-list-align-items:center;
+    position: initial;   
+  }
+  .nav__item {
+ --nav-item-mobile-padding-inline-start: var(--nav-item-padding-inline-start);
+ --nav-item-mobile-padding-inline-end: var(--nav-item-padding-inline-end);
+  --nav-item-mobile-padding-block-end: var(--nav-item-padding-block-end);
+  --nav-item-mobile-padding-block-start: var(--nav-item-padding-block-start);
+  }
+}
+
+
+
