@@ -29,7 +29,6 @@
 /*  Nav list mobile */
   --nav-list-mobile-padding-inline-end: 10px;
   --nav-list-align-items:center;
-
   /* hero section card */
   --hero-section-card-mobile-inline-size: 100%;
   --hero-section-card-inline-size: 50%;
@@ -136,6 +135,7 @@ background: none;
 
 body {
   background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img{
@@ -167,6 +167,7 @@ img{
 .logo__image {
   height: 40px;
   cursor: pointer;
+
 
 }
 
@@ -259,7 +260,17 @@ img{
   padding: 8px 8px;
   border-radius: 7px;
 }
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
+.nav__link:hover {
+  color: #999;
+}
+
+/* Hero section */
 
 @media (min-width: 768px) {
   .header__content {
@@ -297,6 +308,7 @@ img{
   .hero-section__card {
     --hero-section-card-mobile-inline-size: var(--hero-section-card-inline-size);
   }
+
 }
 
 
