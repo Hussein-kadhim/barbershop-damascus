@@ -11,10 +11,10 @@
 
 /* typography */
 --typography-heading-1: 2.5em;
---typography-heading-2: 2em;
+--typography-heading-2: 2.25em;
 --typography-heading-3: 1.5em;
---typography-paragraph: 1em;
---typography-paragraph-lead: 1.25em;
+--typography-paragraph: 1.25em;
+--typography-paragraph-lead: 1.50em;
   /* header */
   --header-content-padding-inline-start: 20px;
   --header-content-padding-inline-end: 20px;
@@ -68,6 +68,36 @@
 }
 
 /* Utils */
+
+/* Table */
+
+th, td {
+  padding-inline: 10px;
+  padding-block: 10px;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+
+
+/* Overlay */
+
+.overlay{
+  position: relative;
+  padding-block: 20px;
+  background-size: cover;
+}
+
+.overlay::after{
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
 
 /* Headings */
 .heading-1 {
@@ -214,25 +244,11 @@ img {
 
 /* Hero section */
 .hero-section {
-  position: relative;
   background-image: url(./images/barbershop-image.png);
-  padding-block: 20px;
-  background-size: cover;
   block-size: calc(88dvh - 84px);
   background-position: center;
   display: flex;
   justify-content: center;
-}
-
-.hero-section::after {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
 }
 
 .hero-section__card {
@@ -254,11 +270,6 @@ img {
 .hero-section__card-description {
   text-align: center;
   padding-block-end: 45px;
-}
-/* TODO CHECK THIS CLASS */
-.hero-section__card-btn button {
-  padding: 8px 8px;
-  border-radius: 7px;
 }
 
 /* Over ons */
@@ -305,6 +316,75 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: var(--row-gap);
+}
+
+
+.behandelingen{
+  --behandelingen-padding-block: 10px;
+
+  padding-block: var(--behandelingen-padding-block);
+  background-image: url(/images/behandelingen-background-image.jpg);
+  display: flex;
+  background-position: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.behandelingen .container {
+  z-index: 2;
+    color: #fff;
+    padding: 0;
+}
+
+table {
+  border-inline-start: 1px solid;
+  border-inline-end: 1px solid;
+  border-block-end: 1px solid;
+  background-color: rgba(56, 56, 56, 0.70);
+  padding-block:30px ;
+  margin-block: 40px;
+  text-align: justify;
+  z-index: 2;
+  color: #fff;
+  inline-size: 50%;
+  margin: auto;
+  padding-inline: 8px;
+}
+
+caption {
+  border-inline-start: 1px solid;
+  border-inline-end: 1px solid;
+  border-block-start: 1px solid;
+  background: rgba(56, 56, 56, 0.70);
+}
+
+
+.table__title {
+  --table__title-font-size:20px;
+
+font-size: var(--table__title-font-size);
+font-weight: 700;
+}
+.behandelingen__title{
+  text-align: center;
+    margin-block: 60px;
+}
+
+.behandelingen__image{
+  inline-size: 100%;
+    margin-block: 40px;
+}
+
+@media (min-width: 425px){
+  table{
+    inline-size: 400px;
+  }
+
+  
+  .behandelingen__image{
+    inline-size: 200px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -354,4 +434,14 @@ img {
   .over-ons__item{
     --over-ons-item-mobile-inline-size: calc(var(--over-ons-item-inline-size) - var(--row-gap));
   }
+
+  table{
+    inline-size: 641px;
+  }
+
+  
+  .behandelingen__image{
+    inline-size: 300px;
+  }
+
 }
