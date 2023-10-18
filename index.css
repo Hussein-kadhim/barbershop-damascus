@@ -199,7 +199,7 @@ img {
 }
 
 .logo__image {
-  height: 40px;
+  inline-size: 220px;
   cursor: pointer;
 }
 
