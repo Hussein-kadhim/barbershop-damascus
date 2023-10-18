@@ -124,8 +124,8 @@ p {
 
 /* Primary Button */
 .button--primary {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--background-color-dark);
+  color: var(--color-white);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -136,7 +136,7 @@ p {
 /* Secondary Button */
 .button--secondary {
   background-color: #999;
-  color: #fff;
+  color: var(--color-white);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -146,7 +146,7 @@ p {
 
 .link-hover {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-white);
   transition: color 0.3s;
 }
 
@@ -155,8 +155,8 @@ p {
 }
 
 .btn-hover {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--background-color-light);
+  color: var(--color-black);
   padding: 10px 20px;
   text-decoration: none;
   border: none;
@@ -168,7 +168,7 @@ p {
 .btn-hover:hover {
   background: none;
   border: 1px solid #fff;
-  color: #fff;
+  color: var(--color-white);
 }
 
 img {
@@ -178,7 +178,7 @@ img {
 /* Navbar */
 
 .header {
-  background-color: black;
+  background-color: var(--background-color-dark);
   position: relative;
 }
 
@@ -206,7 +206,7 @@ img {
 .nav__toggle-btn {
   display: var(--nav-toggle-btn-display);
   background: transparent;
-  color: #fff;
+  color: var(--color-white);
   border: none;
   font-size: 44px;
 }
@@ -219,7 +219,7 @@ img {
   right: 0;
   top: 64px;
   width: 100%;
-  background-color: black;
+  background-color: var(--background-color-dark);
   block-size: var(--nav-list-block-size);
   padding-block-start: var(--nav-list-mobile-padding-block-start);
   padding-inline-end: var(--nav-list-mobile-padding-inline-end);
@@ -256,7 +256,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
+  color: var(--color-white);
   padding-block: 3rem;
   padding-inline: 1rem;
   position: relative;
@@ -333,7 +333,7 @@ img {
 
 .behandelingen .container {
   z-index: 2;
-    color: #fff;
+    color: var(--color-white);
     padding: 0;
 }
 
@@ -346,7 +346,7 @@ table {
   margin-block: 40px;
   text-align: justify;
   z-index: 2;
-  color: #fff;
+  color: var(--color-white);
   inline-size: 50%;
   margin: auto;
   padding-inline: 8px;
