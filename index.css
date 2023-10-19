@@ -40,11 +40,13 @@
   /* Nav list */
   --nav-list-flex-direction: column;
   --nav-list-display: none;
-  --nav-list-block-size: 50vh;
+  --nav-list-block-size: 94vh;
   --nav-toggle-btn-display: block;
   /*  Nav list mobile */
+  --nav-list-inline-size: 50%;
   --nav-list-mobile-padding-inline-end: 10px;
   --nav-list-align-items: center;
+  --nav-list-mobile-padding-block-start: 3rem;
 
   /* hero section card */
   --hero-section-card-mobile-inline-size: 100%;
@@ -65,6 +67,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Utils */
@@ -77,8 +80,6 @@ th, td {
   font-weight: normal;
   white-space: nowrap;
 }
-
-
 
 /* Overlay */
 
@@ -144,13 +145,16 @@ p {
   transition: background-color 0.3s;
 }
 
-.link-hover {
+.nav__link {
   text-decoration: none;
   color: var(--color-white);
   transition: color 0.3s;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: inherit;
 }
 
-.link-hover:hover {
+.nav__link:hover {
   color: #999;
 }
 
@@ -214,16 +218,17 @@ img {
 .nav__list {
   display: var(--nav-list-display);
   flex-direction: var(--nav-list-flex-direction);
+  align-items: center;
   list-style-type: none;
   position: absolute;
   right: 0;
   top: 64px;
-  width: 100%;
+  width: var(--nav-list-inline-size);
   background-color: var(--background-color-dark);
   block-size: var(--nav-list-block-size);
   padding-block-start: var(--nav-list-mobile-padding-block-start);
   padding-inline-end: var(--nav-list-mobile-padding-inline-end);
-  align-items: end;
+  align-items: var(--nav-list-align-items);
   z-index: 3;
 }
 
@@ -242,13 +247,19 @@ img {
   padding-inline-end: 0;
 }
 
+/* Main */
+
+main{
+  scroll-behavior: smooth;
+}
+
 /* Hero section */
 .hero-section {
   background-image: url(./images/barbershop-image.png);
-  block-size: calc(88dvh - 84px);
   background-position: center;
   display: flex;
-  justify-content: center;
+  min-block-size: 750px;
+  align-items: center;
 }
 
 .hero-section__card {
@@ -412,6 +423,7 @@ font-weight: 700;
     --nav-list-mobile-padding-block-start: 0;
     --nav-list-flex-direction: row;
     --nav-list-block-size: 100%;
+    --nav-list-inline-size: 100%;
     --nav-list-display: flex;
     --nav-list-align-items: center;
     position: initial;
