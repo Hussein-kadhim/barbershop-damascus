@@ -346,6 +346,7 @@ main{
   z-index: 2;
     color: var(--color-white);
     padding: 0;
+    margin-block-end: 60px;
 }
 
 table {
