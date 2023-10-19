@@ -1,146 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barbershop Damascus</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="index.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@300;400;600;700&display=swap"
-    rel="stylesheet" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbershop Damascus</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <!-- Header -->
-  <header class="header">
-    <div class="header__content container">
-      <div class="logo">
-        <img class="logo__image" src="images/damascus-logo.svg" alt="Damascus logo" />
-      </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#overons"  class="nav__link">Over Ons</a>
-          </li>
-          <li class="nav__item">
-            <a href="#behandelingen" class="nav__link">Behandelingen</a>
-          </li>
-          <li class="nav__item">
-            <a href="#ervaring" class="nav__link">Ervaring</a>
-          </li>
-          <li class="nav__item">
-            <a href="#galerij" class="nav__link">Galerij</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-        <button class="nav__toggle-btn" id="nav-toggle-btn">
-          <?xml version="1.0" encoding="UTF-8"?>
-          <svg width="1em" height="1em" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <title>Menu</title>
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Menu">
-                <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
-                <line x1="5" y1="7" x2="19" y2="7" id="Path" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round"></line>
-                <line x1="5" y1="17" x2="19" y2="17" id="Path" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round"></line>
-                <line x1="5" y1="12" x2="19" y2="12" id="Path" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round"></line>
-              </g>
-            </g>
-          </svg>
-        </button>
-      </nav>
-    </div>
-  </header>
-  <main>
-  <!-- Hero Section -->
-  <section class="hero-section overlay">
-    <div class="hero-section__card container">
-      <h1 class="hero-section__card-title heading-1">Barbershop Damascus</h1>
-      <p class="hero-section__card-description">
-        Verzorging, stijl en traditie komen samen in onze barbershop. Laat ons
-        je transformeren naar de beste versie van jezelf.
-      </p>
-      <a href="#" class="button--primary hero-section__card-btn btn-hover">Maak nu een afspraak</a>
-    </div>
-  </section>
-  <!-- Over Ons -->
-
-  <section class="over-ons" id="overons">
-    <div class="container row">
-      <div class="over-ons__item">
-        <img src="./images/over-ons-image.png" alt="Over Ons">
-      </div>
-      <div class="over-ons__item">
-        <div class="card">
-          <h2 class="over-ons__title">Over Ons</h2>
-          <p class="over-ons__description">
-            Bij Barbershop Damascus in Utrecht draait alles om stijl en traditie.
-            Ons ervaren team van barbiers staat klaar om uw haar en baard perfect te
-            verzorgen. Met diensten zoals knippen voor volwassenen en kinderen,
-            baardtrimmen en huidverzorging, bieden we alles wat u nodig heeft voor
-            een frisse look. We heten u welkom, zowel met als zonder afspraak.
-            Bezoek ons en ontdek de perfecte mix van vakmanschap en gezelligheid bij
-            Barbershop Damascus.
-          </p>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__content container">
+        <div class="logo">
+          <img
+            class="logo__image"
+            src="images/damascus-logo.svg"
+            alt="Damascus logo"
+          />
         </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#overons" class="nav__link">Over Ons</a>
+            </li>
+            <li class="nav__item">
+              <a href="#behandelingen" class="nav__link">Behandelingen</a>
+            </li>
+            <li class="nav__item">
+              <a href="#testimonial" class="nav__link">Ervaring</a>
+            </li>
+            <li class="nav__item">
+              <a href="#galerij" class="nav__link">Galerij</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <button class="nav__toggle-btn" id="nav-toggle-btn">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <title>Menu</title>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g id="Menu">
+                  <rect
+                    id="Rectangle"
+                    fill-rule="nonzero"
+                    x="0"
+                    y="0"
+                    width="24"
+                    height="24"
+                  ></rect>
+                  <line
+                    x1="5"
+                    y1="7"
+                    x2="19"
+                    y2="7"
+                    id="Path"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  ></line>
+                  <line
+                    x1="5"
+                    y1="17"
+                    x2="19"
+                    y2="17"
+                    id="Path"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  ></line>
+                  <line
+                    x1="5"
+                    y1="12"
+                    x2="19"
+                    y2="12"
+                    id="Path"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  ></line>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section overlay">
+        <div class="hero-section__card container">
+          <h1 class="hero-section__card-title heading-1">
+            Barbershop Damascus
+          </h1>
+          <p class="hero-section__card-description">
+            Verzorging, stijl en traditie komen samen in onze barbershop. Laat
+            ons je transformeren naar de beste versie van jezelf.
+          </p>
+          <a href="#" class="button--primary hero-section__card-btn btn-hover"
+            >Maak nu een afspraak</a
+          >
+        </div>
+      </section>
+      <!-- Over Ons -->
 
-  <!-- Behandelingen -->
+      <section class="over-ons" id="overons">
+        <div class="container row">
+          <div class="over-ons__item">
+            <img src="./images/over-ons-image.png" alt="Over Ons" />
+          </div>
+          <div class="over-ons__item">
+            <div class="card">
+              <h2 class="over-ons__title">Over Ons</h2>
+              <p class="over-ons__description">
+                Bij Barbershop Damascus in Utrecht draait alles om stijl en
+                traditie. Ons ervaren team van barbiers staat klaar om uw haar
+                en baard perfect te verzorgen. Met diensten zoals knippen voor
+                volwassenen en kinderen, baardtrimmen en huidverzorging, bieden
+                we alles wat u nodig heeft voor een frisse look. We heten u
+                welkom, zowel met als zonder afspraak. Bezoek ons en ontdek de
+                perfecte mix van vakmanschap en gezelligheid bij Barbershop
+                Damascus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <section class="behandelingen overlay" id="behandelingen">
-    <div class="container">
-      <h2 class="behandelingen__title heading-2">Behandelingen</h2>
-    <table>
-      <caption>
-        <div class="behandelingen__item">
-          <img class="behandelingen__image" width="200"  src="./images/damascus-logo.svg" alt="Barbershop logo">
-        </div>   
-      </caption>
-    <thead>
-      <tr>
-        <th class="table__title" scope="col">Behandelingen</th>
-        <th class="table__title" scope="col">Price</th>
-      </tr>
-    </thead>
-      <tbody>
-    <tr>
-      <th scope="row">Knippen</th>
-      <td>€15</td>
-    </tr>
-    <tr>
-      <th scope="row">Knippen kind (onder 12)</th>
-      <td>€14</td>
-    </tr>
-    <tr>
-      <th scope="row">Baard trimmen</th>
-      <td>€10</td>
-    </tr>
-    <tr>
-      <th scope="row">Knippen + Baard trimmen</th>
-      <td>€25</td>
-    </tr>
-    <tr>
-      <th scope="row">Huidverzorging</th>
-      <td>€10</td>
-    </tr>
-      </tbody>
-    </table>
-    </div>
-  </section>
-</main>
-  <script src="./index.js"></script>
-</body>
+      <!-- Behandelingen -->
 
+      <section class="behandelingen overlay" id="behandelingen">
+        <div class="container">
+          <h2 class="behandelingen__title heading-2">Behandelingen</h2>
+          <table>
+            <caption>
+              <div class="behandelingen__item">
+                <img
+                  class="behandelingen__image"
+                  width="200"
+                  src="./images/damascus-logo.svg"
+                  alt="Barbershop logo"
+                />
+              </div>
+            </caption>
+            <thead>
+              <tr>
+                <th class="table__title" scope="col">Behandelingen</th>
+                <th class="table__title" scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Knippen</th>
+                <td>€15</td>
+              </tr>
+              <tr>
+                <th scope="row">Knippen kind (onder 12)</th>
+                <td>€14</td>
+              </tr>
+              <tr>
+                <th scope="row">Baard trimmen</th>
+                <td>€10</td>
+              </tr>
+              <tr>
+                <th scope="row">Knippen + Baard trimmen</th>
+                <td>€25</td>
+              </tr>
+              <tr>
+                <th scope="row">Huidverzorging</th>
+                <td>€10</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Ervaring -->
+
+      <section class="testimonial container" id="testimonial">
+        <h2 class="heading-2 testimonial-title">Ervaring</h2>
+        <div class="testimonial__container">
+          <div class="testimonial__card">
+            <a href="https://maps.app.goo.gl/Pf9LqVPkQCKarpkKA" target="_blank">
+              <img
+                class="testimonial__card-avatar"
+                src="./images/testimonial-avatar-1.png"
+                alt="Avatar"
+              />
+            </a>
+            <h3 class="testimonial__card-username">Joan Bosch</h3>
+            <div class="testimonial__card-rating">
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 881 130"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xml:space="preserve"
+                xmlns:serif="http://www.serif.com/"
+                style="
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 2;
+                "
+              >
+                <g transform="matrix(1,0,0,1,-634.728,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,-447.914,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,-261.961,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,-76.0238,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,109.853,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+              </svg>
+              <span class="testimonial__card-date-time">een maand geleden</span>
+            </div>
+            <p class="testimonial__card-text">
+              Recently arribed in Utrecht, I was doubtful about which barbershop
+              would be a good option to go.I decided this one and the result is
+              a quickly appointment, very good cut and price (15€), staff so
+              polite and punctual.I 100% recommend this place and with no doubt
+              I will repeat it!
+            </p>
+          </div>
+
+          <div class="testimonial__card">
+            <a href="https://maps.app.goo.gl/XRYD2W837NqKG5dK8" target="_blank">
+              <img
+                class="testimonial__card-avatar"
+                src="./images/testimonial-avatar-2.png"
+                alt="Avatar"
+              />
+            </a>
+            <h3 class="testimonial__card-username">Steven Morgan</h3>
+            <div class="testimonial__card-rating">
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 881 130"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xml:space="preserve"
+                xmlns:serif="http://www.serif.com/"
+                style="
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 2;
+                "
+              >
+                <g transform="matrix(1,0,0,1,-634.728,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,-447.914,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,-261.961,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,-76.0238,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,109.853,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+              </svg>
+              <span class="testimonial__card-date-time">3 maand geleden</span>
+            </div>
+            <p class="testimonial__card-text">
+              Whenever I move to a city, I try out each hairdresser, one by one,
+              based on who is closest. This is by far the consistently best in
+              the area, don't take too long to get it done, and charge a very
+              reasonable price. So happy I found this place, a hidden gem!
+            </p>
+          </div>
+
+          <div class="testimonial__card">
+            <a href="https://maps.app.goo.gl/XUvkTiabHfir55GBA" target="_blank">
+              <img
+                class="testimonial__card-avatar"
+                src="./images/testimonial-avatar-3.png"
+                alt="Avatar"
+              />
+            </a>
+            <h3 class="testimonial__card-username">ace g</h3>
+            <div class="testimonial__card-rating">
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 881 130"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xml:space="preserve"
+                xmlns:serif="http://www.serif.com/"
+                style="
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 2;
+                "
+              >
+                <g transform="matrix(1,0,0,1,-634.728,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,-447.914,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,-261.961,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,-76.0238,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,109.853,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+              </svg>
+              <span class="testimonial__card-date-time">4 maand geleden</span>
+            </div>
+            <p class="testimonial__card-text">
+              Ik hou van mijn kapsel, precies zoals ik het wilde. De bemanning
+              die daar werkt is zeer professioneel en de service is geweldig en
+              ik kreeg gratis frisdrank. Ik kom zeker terug!
+            </p>
+          </div>
+
+          <div class="testimonial__card">
+            <a href="https://maps.app.goo.gl/YreNkysKKVkzegqh7" target="_blank">
+              <img
+                class="testimonial__card-avatar"
+                src="./images/testimonial-avatar-4.png"
+                alt="Avatar"
+              />
+            </a>
+            <h3 class="testimonial__card-username">Tarek Tarho</h3>
+            <div class="testimonial__card-rating">
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 881 130"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xml:space="preserve"
+                xmlns:serif="http://www.serif.com/"
+                style="
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 2;
+                "
+              >
+                <g transform="matrix(1,0,0,1,-634.728,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,-447.914,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,-261.961,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,-76.0238,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+                <g transform="matrix(1,0,0,1,109.853,-382.568)">
+                  <path
+                    d="M702.68,382.568L718.721,431.938L770.632,431.938L728.635,462.45L744.677,511.82L702.68,481.308L660.683,511.82L676.724,462.45L634.728,431.938L686.639,431.938L702.68,382.568Z"
+                    style="fill: rgb(255, 216, 0)"
+                  />
+                </g>
+              </svg>
+              <span class="testimonial__card-date-time">5 maand geleden</span>
+            </div>
+            <p class="testimonial__card-text">
+              De bemanning van Barbershop Damascus is supervriendelijk en
+              volledig professioneel. Ik ging er vandaag heen voor een knipbeurt
+              en man, wat was ik onder de indruk van de resultaten! Bovendien
+              hebben ze me op het einde zelfs een lief cadeau gegeven. Als je in
+              Utrecht bent en een kapper nodig hebt, dan is Barbershop Damascus
+              zeker de plek.
+            </p>
+          </div>
+          <div>
+            <a
+              href="https://www.google.com/search?hl=nl-NL&gl=nl&q=Barbershop+Damascus,+Marnixlaan+61,+3552+HC+Utrecht&ludocid=5767124451314633231&lsig=AB86z5VvY2Zw5lf6sN70LwxCgC2s#lrd=0x47c66fae2e0bb65b:0x5008f12208140a0f,3"
+              target="_blank"
+            >
+              <button class="button--primary">Schrijf Een Review</button></a
+            >
+            <a
+              href="https://www.google.com/search?hl=nl-NL&gl=nl&q=Barbershop+Damascus,+Marnixlaan+61,+3552+HC+Utrecht&ludocid=5767124451314633231&lsig=AB86z5VvY2Zw5lf6sN70LwxCgC2s#lrd=0x47c66fae2e0bb65b:0x5008f12208140a0f,1"
+              target="_blank"
+            >
+              <button class="button--primary">Meer Lezen</button></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
 </html>
