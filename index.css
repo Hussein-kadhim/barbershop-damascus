@@ -273,7 +273,7 @@ main {
 
 /* Hero section */
 .hero-section {
-  background-image: url(./images/barbershop-image.png);
+  background-image: url(./images/hero-section-background-image.jpg);
   background-position: center;
   display: flex;
   min-block-size: 750px;
@@ -351,7 +351,7 @@ main {
   --behandelingen-padding-block: 10px;
 
   padding-block: var(--behandelingen-padding-block);
-  background-image: url(/images/behandelingen-background-image.jpg);
+  background-image: url(/images/behandelingen-section-background-image.jpg);
   display: flex;
   background-position: center;
   justify-content: center;
