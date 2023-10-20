@@ -74,11 +74,18 @@
 
 /* Utils */
 
+/* Heading */
+
+
 /* Table */
+
+table{
+  inline-size: 100%;
+  padding-inline:var(--table-padding-inline) ;
+}
 
 th,
 td {
-  padding-inline: 10px;
   padding-block: 10px;
   font-weight: normal;
   white-space: nowrap;
@@ -129,6 +136,7 @@ td {
 
 .heading-3 {
   font-size: var(--typography-heading-3);
+  margin-block-end: var(--heading-3-margin-block-end);
 }
 
 /* Paragraph */
@@ -349,7 +357,7 @@ main {
 
 .services {
   --services-padding-block: 10px;
-
+  --table-padding-inline: 20px;
   padding-block: var(--services-padding-block);
   background-image: url(/images/services-section-background-image.jpg);
   display: flex;
@@ -378,7 +386,6 @@ main {
   color: var(--color-white);
   inline-size: 50%;
   margin: auto;
-  padding-inline: 8px;
 }
 
 .services__table__caption {
@@ -448,7 +455,7 @@ main {
 
 /* Gallery */
 
-.gallery{
+.gallery {
   background-color: var(--background-color-dark);
   padding-block-end: 60px;
 }
@@ -464,19 +471,62 @@ main {
   padding-block-end: 10px;
 }
 
+/* Contact Us */
+.contact-us {
+  --min: 25ch;
+  --heading-3-margin-block-end:20px;
+}
+
+.contact-us__title {
+  --contact-us__title-padding-block: 60px;
+  padding-block: var(--contact-us__title-padding-block);
+  text-align: center;
+}
+
+.contact-us__map {
+  text-align: center;
+  margin-block-start: 20px;
+}
+
+.contact-us__map iframe {
+  inline-size: 100%;
+}
+
+.contact-us__container {
+  display: flex;
+  margin-block-start: 60px;
+}
+
+.content-us__content-items {
+  margin-block-end: 30px;
+  text-align: justify;
+}
+
+.content-us__content-items ul li {
+  margin-block-start: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content-us__content-items a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-block-start: 10px;
+}
+
 @media (min-width: 425px) {
   .services__table {
     inline-size: 400px;
   }
-
 }
 
 @media (min-width: 769px) {
-
-  th,
-td {
-  padding-inline: 30px;
-}
   .header__content {
     --header-content-mobile-padding-inline-start: var(
       --header-content-padding-inline-start
@@ -546,4 +596,5 @@ td {
   .testimonial__card-text {
     inline-size: 80%;
   }
+
 }
