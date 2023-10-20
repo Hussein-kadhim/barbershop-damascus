@@ -347,11 +347,11 @@ main {
   gap: var(--row-gap);
 }
 
-.behandelingen {
-  --behandelingen-padding-block: 10px;
+.services {
+  --services-padding-block: 10px;
 
-  padding-block: var(--behandelingen-padding-block);
-  background-image: url(/images/behandelingen-section-background-image.jpg);
+  padding-block: var(--services-padding-block);
+  background-image: url(/images/services-section-background-image.jpg);
   display: flex;
   background-position: center;
   justify-content: center;
@@ -359,14 +359,14 @@ main {
   align-items: center;
 }
 
-.behandelingen .container {
+.services .container {
   z-index: 2;
   color: var(--color-white);
   padding: 0;
   margin-block-end: 60px;
 }
 
-table {
+.services__table {
   border-inline-start: 1px solid;
   border-inline-end: 1px solid;
   border-block-end: 1px solid;
@@ -381,11 +381,22 @@ table {
   padding-inline: 8px;
 }
 
-caption {
+.services__table__caption {
   border-inline-start: 1px solid;
   border-inline-end: 1px solid;
   border-block-start: 1px solid;
   background: rgba(56, 56, 56, 0.7);
+}
+
+.services__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-block: 60px;
+}
+
+.services__image {
+  inline-size: 200px;
+  margin-block: 40px;
 }
 
 .table__title {
@@ -393,15 +404,6 @@ caption {
 
   font-size: var(--table__title-font-size);
   font-weight: 700;
-}
-.behandelingen__title {
-  text-align: center;
-  margin-block: 60px;
-}
-
-.behandelingen__image {
-  inline-size: 100%;
-  margin-block: 40px;
 }
 
 /* Ervaring */
@@ -463,16 +465,18 @@ caption {
 }
 
 @media (min-width: 425px) {
-  table {
+  .services__table {
     inline-size: 400px;
   }
 
-  .behandelingen__image {
-    inline-size: 200px;
-  }
 }
 
 @media (min-width: 769px) {
+
+  th,
+td {
+  padding-inline: 30px;
+}
   .header__content {
     --header-content-mobile-padding-inline-start: var(
       --header-content-padding-inline-start
@@ -521,14 +525,6 @@ caption {
     --over-ons-item-mobile-inline-size: calc(
       var(--over-ons-item-inline-size) - var(--row-gap)
     );
-  }
-
-  table {
-    inline-size: 641px;
-  }
-
-  .behandelingen__image {
-    inline-size: 300px;
   }
 
   .testimonial__container {
