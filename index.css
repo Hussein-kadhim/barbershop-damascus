@@ -123,6 +123,8 @@ td {
 
 .flexbox-grid > * {
   flex: 1 1 var(--min);
+  display: var(--flexbox-grid-item-display);
+  justify-content: var(--flexbox-grid-item-justify-content);
 }
 
 /* Headings */
@@ -518,6 +520,30 @@ main {
   display: flex;
   gap: 10px;
   margin-block-start: 10px;
+}
+
+/* Footer */
+
+.footer{
+  --flexbox-grid-item-display:flex;
+  --flexbox-grid-item-justify-content:center;
+  background-color: var(--background-color-dark);
+  --min: 25ch;
+
+  color: var(--color-white);
+  padding-block: 30px;
+}
+
+.author-link{
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s
+}
+
+.author-link:hover{
+  color: #999;
+  transition: background-color 0.3s;
+
 }
 
 @media (min-width: 425px) {
