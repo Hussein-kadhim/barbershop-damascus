@@ -51,10 +51,10 @@
   --hero-section-card-mobile-inline-size: 100%;
   --hero-section-card-inline-size: 50%;
 
-  /* over ons */
+  /* About us */
 
-  --over-ons-item-inline-size: 50%;
-  --over-ons-item-mobile-inline-size: 100%;
+  --about-us-item-inline-size: 50%;
+  --about-us-item-mobile-inline-size: 100%;
 
   /* row  tokens*/
   --row-gap: 20px;
@@ -312,34 +312,38 @@ main {
 }
 
 /* Over ons */
-.over-ons {
-  --card-padding-inline: 20px;
-  --over-ons-padding-block: 20px;
-  padding-block: var(--over-ons-padding-block);
+.about-us {
+  --about-us-padding-block: 20px;
+  padding-block: var(--about-us-padding-block);
 }
-.over-ons__title {
-  --over-ons-title-font-size: var(--typography-heading-2);
-  --over-ons-title-color: var(--color-black);
-  --over-ons-title-margin-block-end: 10px;
 
-  font-size: var(--over-ons-title-font-size);
-  color: var(--over-ons-title-color);
+.about-us__container{
+  --gap:2rem;
+}
+
+.about-us__title {
+  --about-us-title-font-size: var(--typography-heading-2);
+  --about-us-title-color: var(--color-black);
+  --about-us-title-margin-block-end: 10px;
+
+  font-size: var(--about-us-title-font-size);
+  color: var(--about-us-title-color);
   font-family: inherit;
-  margin-block-end: var(--over-ons-title-margin-block-end);
+  margin-block-end: var(--about-us-title-margin-block-end);
 }
-.over-ons__description {
-  --over-ons-description-font-size: var(--typography-paragraph);
-  --over-ons-description-color: var(--color-black);
+.about-us__description {
+  --about-us-description-font-size: var(--typography-paragraph);
+  --about-us-description-color: var(--color-black);
 
-  font-size: var(--over-ons-description-font-size);
-  color: var(--over-ons-description-color);
+  font-size: var(--about-us-description-font-size);
+  color: var(--about-us-description-color);
   font-family: inherit;
 }
-.over-ons__item {
-  inline-size: var(--over-ons-item-mobile-inline-size);
+.about-us__item {
+  inline-size: var(--about-us-item-mobile-inline-size);
 }
 
-.over-ons-description {
+.about-us-description {
   width: 80%;
   text-align: center;
 }
@@ -593,9 +597,9 @@ main {
       --hero-section-card-inline-size
     );
   }
-  .over-ons__item {
-    --over-ons-item-mobile-inline-size: calc(
-      var(--over-ons-item-inline-size) - var(--row-gap)
+  .about-us__item {
+    --about-us-item-mobile-inline-size: calc(
+      var(--about-us-item-inline-size) - var(--row-gap)
     );
   }
 
