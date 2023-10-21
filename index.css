@@ -488,15 +488,11 @@ main {
 .contact-us__map {
   text-align: center;
   margin-block-start: 20px;
+  margin-block-end: 20px;
 }
 
 .contact-us__map iframe {
   inline-size: 100%;
-}
-
-.contact-us__container {
-  display: flex;
-  margin-block-start: 60px;
 }
 
 .content-us__content-items {
