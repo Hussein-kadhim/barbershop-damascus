@@ -230,6 +230,7 @@ margin-block-start: var(--button-group-margin-block-start, 20px);
 
 img {
   inline-size: 100%;
+  block-size: 100% ;
 }
 
 /* Navbar */
