@@ -48,7 +48,6 @@ const  onNavToggleBtnClicked = (event) => {
     navList.classList.toggle('nav__list--mobile')
     navToggleBtnState = !navToggleBtnState
     navToggleBtn.innerHTML = navToggleBtnState ? closeIcon : hamburgerIcon
-    console.log(navToggleBtnState);
 }
 
 navToggleBtn.addEventListener('click', onNavToggleBtnClicked)
