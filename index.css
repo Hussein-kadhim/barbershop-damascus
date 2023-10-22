@@ -473,6 +473,7 @@ main {
 .testimonial__profile-link{
   color: #000;
   text-decoration-line: none;
+  display: inline-block;
 }
 
 .testimonial__profile-link:hover{
