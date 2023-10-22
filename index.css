@@ -588,13 +588,17 @@ outline-width: 2px;
 .author-link{
   text-decoration: none;
   color: #fff;
-  transition: color 0.3s
+  transition: color 0.3s;
+  padding-inline-start: 5px;
 }
 
 .author-link:hover{
   color: #999;
   transition: background-color 0.3s;
+}
 
+#year{
+  padding-inline-end: 5px;
 }
 
 @media (min-width: 425px) {
