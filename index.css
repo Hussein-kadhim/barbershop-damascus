@@ -511,19 +511,19 @@ outline-width: 2px;
 
 /* Gallery */
 
-.gallery {
+.portfolio {
   background-color: var(--background-color-dark);
   padding-block-end: 60px;
 }
 
-.gallery__info {
-  --gallery-padding-block: 60px;
-  padding-block: var(--gallery-padding-block);
+.portfolio__info {
+  --portfolio-padding-block: 60px;
+  padding-block: var(--portfolio-padding-block);
   text-align: center;
   color: var(--color-white);
 }
 
-.gallery__title {
+.portfolio__title {
   padding-block-end: 10px;
 }
 
