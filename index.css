@@ -527,42 +527,42 @@ outline-width: 2px;
   padding-block-end: 10px;
 }
 
-/* Contact Us */
+/* Get in touch */
 
-.contact-us {
+.get-in-touch {
   --min: 25ch;
   --heading-3-margin-block-end:20px;
 }
 
-.contact-us__title {
-  --contact-us__title-padding-block: 60px;
-  padding-block: var(--contact-us__title-padding-block);
+.get-in-touch__title {
+  --get-in-touch__title-padding-block: 60px;
+  padding-block: var(--get-in-touch__title-padding-block);
   text-align: center;
 }
 
-.contact-us__map {
+.get-in-touch__map {
   text-align: center;
   margin-block-start: 20px;
   margin-block-end: 20px;
 }
 
-.contact-us__map iframe {
+.get-in-touch__map iframe {
   inline-size: 100%;
 }
 
-.content-us__content-items {
+.get-in-touch {
   margin-block-end: 30px;
   text-align: justify;
 }
 
-.content-us__content-items ul li {
+.get-in-touch ul li {
   margin-block-start: 10px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.content-us__content-items a {
+.get-in-touch a {
   text-decoration: none;
   color: var(--color-black);
 }
