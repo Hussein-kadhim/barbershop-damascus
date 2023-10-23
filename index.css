@@ -164,6 +164,10 @@ p {
   font-size: var(--typography-paragraph-lead);
 }
 
+.icons{
+  font-size: 24px;
+}
+
 /* Button Group */
 
 .button-group {
@@ -569,12 +573,29 @@ outline-width: 2px;
 .get-in-touch a {
   text-decoration: none;
   color: var(--color-black);
+  transition: color 0.3s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.get-in-touch a:hover{
+ color: #999;
+ transition: background-color 0.3s ease;
 }
 
 .social-icons {
   display: flex;
   gap: 10px;
   margin-block-start: 10px;
+}
+
+.social-icon-link{
+  margin-inline-end: 5px;
+}
+
+li .social-icon-link:hover{
+  color: #999;
+  cursor:pointer;
 }
 
 /* Footer */
