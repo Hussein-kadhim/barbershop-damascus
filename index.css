@@ -480,6 +480,7 @@ main {
   color: #000;
   text-decoration-line: none;
   display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .testimonial__profile-link:hover{
@@ -514,8 +515,6 @@ outline-style: solid;
 outline-color:var(--color-black);
 outline-width: 2px;
 }
-
-
 
 /* Gallery */
 
@@ -593,7 +592,7 @@ outline-width: 2px;
   margin-inline-end: 5px;
 }
 
-li .social-icon-link:hover{
+.social-icon-link:hover{
   color: #999;
   cursor:pointer;
 }
