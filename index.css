@@ -13,7 +13,7 @@
   --typography-heading-1: 2.5em;
   --typography-heading-2: 2.25em;
   --typography-heading-3: 1.5em;
-  --typography-paragraph: 1em;
+  --typography-paragraph: 1.1em;
   --typography-paragraph-lead: 1.5em;
 
   /* header */
@@ -75,6 +75,10 @@
   font-family: "Roboto", sans-serif;
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
+}
+
+.paragraph{
+  font-size: 1.1em;
 }
 
 /* Utils */
@@ -532,6 +536,15 @@ outline-width: 2px;
 
 .portfolio__title {
   padding-block-end: 10px;
+}
+
+.portfolio__images{
+  transition: 0.3s ease-out
+}
+
+.portfolio__images:hover{
+  transform: scale(1.03);
+  transition: 0.3s ease-in;
 }
 
 /* Get in touch */
