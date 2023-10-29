@@ -1,3 +1,23 @@
+
+
+const swiper = new Swiper(".mySwiper", {
+    slidesPerView: window.innerWidth < 1024 ? 1 : window.innerWidth === 1024 ? 2 : 3,
+    spaceBetween: 30,
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+      el: '.swiper-pagination',
+  },
+  autoplay: {
+      delay: 3000, // Autoplay delay in milliseconds
+      disableOnInteraction: false, // Allow manual interaction to stop autoplay
+  }
+});
+
+
+
 const navToggleBtn = document.getElementById("nav-toggle-btn")
 const navList = document.querySelector('.nav__list')
 

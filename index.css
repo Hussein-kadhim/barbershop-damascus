@@ -58,7 +58,7 @@
 
   /* About us */
 
-  --about-us-item-inline-size: 50%;
+  --about-us-item-inline-size: 75%;
   --about-us-item-mobile-inline-size: 100%;
 
   /* row  tokens*/
@@ -171,6 +171,50 @@ p {
 .icons{
   font-size: 24px;
 }
+
+/* Swiper */
+
+
+.swiper-container {
+  inline-size: 100%;
+  margin: auto;
+  margin-block: 60px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    object-fit: scale-down;
+}
+
+.swiper-pagination {
+    --swiper-pagination-bottom: 0;
+    background-color: #fff;
+    padding-block: 5px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #fff;
+    inline-size: 33px;
+    block-size: 33px;
+    border-radius: 50%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 18px;
+    font-weight: 700;
+}
+
 
 /* Button Group */
 
@@ -300,6 +344,7 @@ main {
 }
 
 /* Hero section */
+
 .hero-section {
   background-image: url(./images/hero-section-background-image.jpg);
   background-position: center;
@@ -347,7 +392,8 @@ main {
       outline-color:var(--color-white); 
     }
 
-/* Over ons */
+/* About us */
+
 .about-us {
   --about-us-padding-block: 20px;
   padding-block: var(--about-us-padding-block);
@@ -355,6 +401,9 @@ main {
 
 .about-us__container{
   --gap:2rem;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-us__title {
@@ -371,18 +420,17 @@ main {
   --about-us-description-font-size: var(--typography-paragraph);
   --about-us-description-color: var(--color-black);
 
+  text-align: center;
   font-size: var(--about-us-description-font-size);
   color: var(--about-us-description-color);
   font-family: inherit;
 }
 .about-us__item {
   inline-size: var(--about-us-item-mobile-inline-size);
+  margin-block-end: 60px;
 }
 
-.about-us-description {
-  width: 80%;
-  text-align: center;
-}
+/* Services */
 
 .card {
   display: flex;
@@ -518,33 +566,6 @@ background-color: var(--background-color-light);
 outline-style: solid;
 outline-color:var(--color-black);
 outline-width: 2px;
-}
-
-/* Gallery */
-
-.portfolio {
-  background-color: var(--background-color-dark);
-  padding-block-end: 60px;
-}
-
-.portfolio__info {
-  --portfolio-padding-block: 60px;
-  padding-block: var(--portfolio-padding-block);
-  text-align: center;
-  color: var(--color-white);
-}
-
-.portfolio__title {
-  padding-block-end: 10px;
-}
-
-.portfolio__images{
-  transition: 0.3s ease-out
-}
-
-.portfolio__images:hover{
-  transform: scale(1.03);
-  transition: 0.3s ease-in;
 }
 
 /* Get in touch */
