@@ -45,7 +45,7 @@
   --nav-list-flex-direction: column;
   --nav-list-display: none;
   --nav-list-block-size: 94vh;
-  --nav-toggle-btn-display: block;
+  --nav-toggle-btn-display: inline-flex;
   /*  Nav list mobile */
   --nav-list-inline-size: 50%;
   --nav-list-mobile-padding-inline-end: 10px;
@@ -304,6 +304,7 @@ img {
   border: none;
   font-size: 44px;
 }
+
 
 .nav__list {
   display: var(--nav-list-display);

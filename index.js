@@ -20,12 +20,13 @@ const swiper = new Swiper(".mySwiper", {
 
 const navToggleBtn = document.getElementById("nav-toggle-btn")
 const navList = document.querySelector('.nav__list')
+const navIcon = document.querySelector('.nav-icon')
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
 const hamburgerIcon = `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="1em" height="1em" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink">
+    xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" class="nav-icon">
     <title>Menu</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Menu">
@@ -53,6 +54,8 @@ const closeIcon = `<?xml version="1.0" encoding="utf-8"?>
   viewBox="0 0 24 24"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
+  aria-hidden="true" focusable="false"
+  class="nav-icon"
 >
   <path
     fill-rule="evenodd"
@@ -62,12 +65,64 @@ const closeIcon = `<?xml version="1.0" encoding="utf-8"?>
   />
 </svg>
 `
-let navToggleBtnState = false
 
-const  onNavToggleBtnClicked = (event) => {
-    navList.classList.toggle('nav__list--mobile')
-    navToggleBtnState = !navToggleBtnState
-    navToggleBtn.innerHTML = navToggleBtnState ? closeIcon : hamburgerIcon
+// const onNavToggleBtnClicked = (event) => {
+//     event.stopPropagation(); // Stops the click event from propagating to the document
+
+//     if (navList.classList.contains('nav__list--mobile')) {
+//         navList.classList.remove('nav__list--mobile');
+//         navToggleBtn.innerHTML = hamburgerIcon;
+//     } else {
+//         navList.classList.add('nav__list--mobile');
+//         navToggleBtn.innerHTML = closeIcon;
+//     }
+// }
+
+// navToggleBtn.addEventListener('click', onNavToggleBtnClicked);
+
+// document.addEventListener('click', (event) => {
+//     if (navList.classList.contains('nav__list--mobile') && !navList.contains(event.target) && event.target !== navToggleBtn) {
+//         navList.classList.remove('nav__list--mobile');
+//         navToggleBtn.innerHTML = hamburgerIcon;
+//     }
+// });
+
+
+// Function to close the navigation bar
+const closeNavBar = () => {
+    navList.classList.remove('nav__list--mobile');
+    navToggleBtnState = false;
+    navToggleBtn.innerHTML = hamburgerIcon;
+    document.body.style.overflow = 'auto'
+};
+
+// Function to handle the button click
+const onNavToggleBtnClicked = (event) => {
+    event.stopPropagation(); // Stops the click event from propagating to the document
+
+    if (navList.classList.contains('nav__list--mobile')) {
+        closeNavBar();
+    } else {
+        navList.classList.add('nav__list--mobile');
+        navToggleBtn.innerHTML = closeIcon;
+        document.body.style.overflow = 'hidden'
+    }
 }
 
-navToggleBtn.addEventListener('click', onNavToggleBtnClicked)
+// Add a click event listener to the button
+navToggleBtn.addEventListener('click', onNavToggleBtnClicked);
+
+// Add a click event listener to each nav__link
+const navLinks = document.querySelectorAll('.nav__link');
+navLinks.forEach((navLink) => {
+    navLink.addEventListener('click', () => {
+        closeNavBar(); // Close the navigation bar when a nav__link is clicked
+    });
+});
+
+// Add a click event listener to the document to close the navigation bar when clicking outside
+document.addEventListener('click', (event) => {
+    if (navList.classList.contains('nav__list--mobile') && !navList.contains(event.target) && event.target !== navToggleBtn) {
+        closeNavBar();
+    }
+});
