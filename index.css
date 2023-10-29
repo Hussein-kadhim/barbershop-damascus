@@ -184,7 +184,7 @@ p {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: var(--background-color-light);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,13 +197,14 @@ p {
 
 .swiper-pagination {
     --swiper-pagination-bottom: 0;
-    background-color: #fff;
+    background-color: var(--background-color-light);
     padding-block: 5px;
+    color: var(--color-black);
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    background-color: #fff;
+    background-color: var(--background-color-light);
     inline-size: 33px;
     block-size: 33px;
     border-radius: 50%;
@@ -213,8 +214,12 @@ p {
 .swiper-button-prev::after {
     font-size: 18px;
     font-weight: 700;
+    color: var(--color-black);
 }
 
+.swiper-pagination-bullet{
+  background-color: var(--background-color-dark);
+}
 
 /* Button Group */
 
@@ -646,7 +651,7 @@ outline-width: 2px;
 
 .author-link{
   text-decoration: none;
-  color: #fff;
+  color: var(--color-white);
   transition: color 0.3s;
   padding-inline-start: 5px;
 }
