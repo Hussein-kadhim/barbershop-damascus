@@ -8,13 +8,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="index.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@300;400;600;700&display=swap"
     rel="stylesheet" />
-</head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
 <body>
   <!-- Header -->
@@ -33,9 +35,6 @@
           </li>
           <li class="nav__item">
             <a href="#testimonial" class="nav__link">Reviews</a>
-          </li>
-          <li class="nav__item">
-            <a href="#portfolio" class="nav__link">Portfolio</a>
           </li>
           <li class="nav__item">
             <a href="#get-in-touch" class="nav__link">Get in touch</a>
@@ -81,10 +80,30 @@
     <!-- About Us -->
 
     <section class="about-us" id="about-us">
-      <div class="about-us__container container flexbox-grid">
-        <div class="about-us__item">
-          <img src="./images/about-us-image.png" alt="About Us" />
-        </div>
+      <div class="about-us__container container">
+        <div class="swiper-container">
+          <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="./images/portfolio-1.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="./images/portfolio-2.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="./images/portfolio-3.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="./images/portfolio-4.jpg" alt="">
+                  </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+          </div>
+      </div>
+      
         <div class="about-us__item">
           <div class="card">
             <h2 class="about-us__title">About Us</h2>
@@ -392,30 +411,6 @@
       </div>
     </section>
 
-    <!-- Gallery -->
-
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <div class="portfolio__info">
-          <h2 class="heading-2 portfolio__title">Portfolio</h2>
-          <p class="portfolio__description paragraph--lead">
-            Admire the various hairstyles we have created and the satisfaction of our customers.
-          </p>
-        </div>
-        <ul class="flexbox-grid">
-          <li>
-            <img class="portfolio__images" src="./images/portfolio-1.jpg" alt="high taper fade " />
-          </li>
-          <li>
-            <img class="portfolio__images" src="./images/portfolio-2.jpg" alt="Buzcut" />
-          </li>
-          <li>
-            <img class="portfolio__images" src="./images/portfolio-3.jpg" alt="Fade Haircut" />
-          </li>
-        </ul>
-      </div>
-    </section>
-
     <!-- Contact Us -->
 
     <section class="get-in-touch container" id="get-in-touch">
@@ -586,7 +581,8 @@
           Kadhim</a></span>
     </div>
   </footer>
-  <script src="./index.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="./index.js"></script>
 </body>
-
 </html>
