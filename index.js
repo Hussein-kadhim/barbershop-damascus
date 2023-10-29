@@ -65,29 +65,6 @@ const closeIcon = `<?xml version="1.0" encoding="utf-8"?>
   />
 </svg>
 `
-
-// const onNavToggleBtnClicked = (event) => {
-//     event.stopPropagation(); // Stops the click event from propagating to the document
-
-//     if (navList.classList.contains('nav__list--mobile')) {
-//         navList.classList.remove('nav__list--mobile');
-//         navToggleBtn.innerHTML = hamburgerIcon;
-//     } else {
-//         navList.classList.add('nav__list--mobile');
-//         navToggleBtn.innerHTML = closeIcon;
-//     }
-// }
-
-// navToggleBtn.addEventListener('click', onNavToggleBtnClicked);
-
-// document.addEventListener('click', (event) => {
-//     if (navList.classList.contains('nav__list--mobile') && !navList.contains(event.target) && event.target !== navToggleBtn) {
-//         navList.classList.remove('nav__list--mobile');
-//         navToggleBtn.innerHTML = hamburgerIcon;
-//     }
-// });
-
-
 // Function to close the navigation bar
 const closeNavBar = () => {
     navList.classList.remove('nav__list--mobile');
