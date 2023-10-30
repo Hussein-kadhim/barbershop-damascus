@@ -573,6 +573,8 @@ outline-width: 2px;
 .get-in-touch {
   --min: 25ch;
   --heading-3-margin-block-end:20px;
+  margin-block-end: 30px;
+  text-align: justify;
 }
 
 .get-in-touch__title {
@@ -591,11 +593,6 @@ outline-width: 2px;
   inline-size: 100%;
 }
 
-.get-in-touch {
-  margin-block-end: 30px;
-  text-align: justify;
-}
-
 .get-in-touch ul li {
   margin-block-start: 10px;
   display: flex;
@@ -609,12 +606,15 @@ outline-width: 2px;
   transition: color 0.3s;
   display: inline-flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .get-in-touch a:hover{
  color: #999;
  transition: background-color 0.3s ease;
 }
+
+/* Social media */
 
 .social-icons {
   display: flex;
