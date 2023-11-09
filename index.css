@@ -486,13 +486,13 @@ main {
 }
 
 .table__title {
-  --table__title-font-size: 23px;
+  --table__title-font-size: 20px;
   font-size: var(--table__title-font-size);
   font-weight: 800;
 }
 
 .services__items {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .services__price {
@@ -708,6 +708,14 @@ main {
 
   .services__container {
     padding-inline: 70px;
+  }
+
+  .services__items {
+    font-size: 18px;
+  }
+
+  .table__title {
+    --table__title-font-size: 23px;
   }
 
   .testimonial__container {
