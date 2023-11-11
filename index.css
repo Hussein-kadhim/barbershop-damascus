@@ -514,6 +514,13 @@ main {
   text-align: end;
 }
 
+.services__price__sale {
+  text-decoration: line-through;
+  color: #999;
+  text-align: center;
+  padding-inline-end: 8px;
+}
+
 /* Testimonial */
 
 .testimonial {
